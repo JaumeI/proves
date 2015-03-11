@@ -32,6 +32,6 @@ class AlumneController extends Controller
     public function index()
     {
         $a = ['clau'=>'valor'];
-        return view('alumnes', $a);
+        return view('alumnes', $a)->with('b', 3*2);
     }
 }
